@@ -1,15 +1,12 @@
-const stringLength = require('./string');
-const reverseString = require('./string');
-const math = require('./string');
-const capitaliseString = require('./string');
+import {stringLength, reverseString, math, capitaliseString} from './string.js'
   
-  test('string has atleast 1 and atmost 10 characters', () => {
+  test('String has at least 1 and at most 10 characters', () => {
     const string = 'Hermon';
     expect(stringLength(string)).toBeGreaterThanOrEqual(1);
     expect(stringLength(string)).toBeLessThanOrEqual(10);
   });
   
-  test('reverse name to equal eman', () => {
+  test('Reverse name to equal nomreH', () => {
     const string = 'Hermon';
     expect(reverseString(string)).toMatch(/nomreH/);
   });
@@ -64,7 +61,7 @@ describe('division', () => {
 });
 });
 
-test('capitalise first letter in stephen', () => {
+test('Capitalise first letter in hermon', () => {
 const string = 'hermon';
 expect(capitaliseString(string)).toMatch(/Hermon/);
 });
