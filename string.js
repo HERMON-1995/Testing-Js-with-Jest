@@ -23,10 +23,6 @@ const stringLength = string => {
     },
   };
   
-  const capitaliseString = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+const capitaliseString = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
-
- module.exports = stringLength;
- module.exports = reverseString;
- module.exports = capitaliseString;
- module.exports = math;
+export {stringLength, reverseString, math, capitaliseString};
